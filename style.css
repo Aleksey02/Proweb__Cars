@@ -20,6 +20,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .header__nav{
     background: #000000;
@@ -38,6 +39,7 @@ ul{
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: transform 0.5s;
 }
 .logo__span{
     background: #4A90E2;
@@ -48,4 +50,77 @@ ul{
     font-size: 14px;
     line-height: 18px;
     color: #FFFFFF;
+    transition: transform 0.5s;
+}
+.header__nav-link:hover{
+    transform: scale(1.3);
+    display: block;
+}
+.logo:hover{
+    transform: scale(1.3);
+    
+}
+.header__nav-search{
+    transition: transform 0.5s;
+}
+.header__nav-search:hover{
+    transform: scale(1.3);
+}
+
+.main__box-item{
+    position: relative;
+    
+    
+}
+.main__box-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   z-index: -1; 
+   
+   object-fit: cover;
+}
+.main__box-link{
+     font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: #4A90E2;
+    border-radius: 3px;
+    padding: 4px 12px 2px 12px;
+    position: absolute;
+    top: 30px;
+    left: 21px; 
+}
+.item__bottom{
+    position: absolute;
+    bottom: 23px;
+    left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+.item__bottom-title{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+.main__box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 23;
+    gap: 28px;
+}
+.item1{
+    grid-row: span 2;
+}
+.main{
+    padding: 30px;
 }
